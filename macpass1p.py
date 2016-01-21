@@ -26,7 +26,7 @@ args = parser.parse_args()
 
 # Read config file
 config = ConfigParser.SafeConfigParser()
-config.read(os.path.join('etc', script_name + '.conf'))
+config.read(os.path.join('etc', 'settings.conf'))
 
 passwords_xml = BeautifulSoup(open(config.get('General', 'input')), 'lxml')
 logger.info('MacPass XML file is opened')
