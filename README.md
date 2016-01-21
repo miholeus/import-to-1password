@@ -1,4 +1,4 @@
-# KeePass XML to 1Password CSV converter
+# KeePass/MacPass XML to 1Password CSV converter
 
 Migrate your KeePass(X)/MacPass data to 1Password 6: Export your KeePass(X)/MacPass data to XML,
 use this script to convert it to a CSV, and then import the CSV into
@@ -20,7 +20,7 @@ Install dependencies:
 
 ## Documentation
 
-- [1Password 4.x CSV Documentation](https://learn2.agilebits.com/1Password4/Mac/en/KB/import.html#csv--comma-separated-values)
+- [1Password 6.x CSV Documentation](https://learn2.agilebits.com/1Password4/Mac/en/KB/import.html#csv--comma-separated-values)
 
 ## License
 
