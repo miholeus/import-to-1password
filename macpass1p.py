@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 # Helper
 def normalize(s):
-  return '"%s"' % s.replace('"', '""')
+  return '"%s"' % s.replace('"', '""') if s else ''
 
 # Setup logging
 script_name = os.path.splitext(os.path.basename(__file__))[0]
@@ -44,7 +44,7 @@ for entry in passwords_xml.find_all('entry'):
   password['title'] = normalize(fields['title'])
   password['username'] = normalize(fields['username'])
   password['password'] = normalize(fields['password'])
-  password['url'] = normalize(fields['url'].replace('http://', ''))
+  password['url'] = normalize(fields['url'].replace('http://', '')) if fields['url'] else ''
   password['notes'] = normalize(fields['notes'])
 
   passwords.append(password)
