@@ -8,7 +8,7 @@ use this script to convert it to a CSV, and then import the CSV into
 
 Install dependencies:
 
-- `pip install -r requirements.txt`
+- `sudo pip install -r requirements.txt`
 
 ## Usage
 
